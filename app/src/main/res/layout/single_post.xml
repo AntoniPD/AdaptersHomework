@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:id="@+id/img_post"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_points"
+            android:text=" Points"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_comments"
+            android:text=" Comments"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/arrow_up"
+            android:id="@+id/btn_arrow_up" />
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/arrow_down"
+            android:id="@+id/btn_arrow_down" />
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/sym_action_chat"
+            android:id="@+id/btn_comments" />
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/three_dots"
+            android:id="@+id/btn_more" />
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#0663fa"
+            android:text="SHARE"
+            android:layout_weight="1"
+            android:id="@+id/btn_share" />
+    </LinearLayout>
+
+</LinearLayout>
